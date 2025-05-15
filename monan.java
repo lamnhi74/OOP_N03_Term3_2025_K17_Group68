@@ -1,15 +1,16 @@
 public class monan {
     private string id;
-    private string ten;
+    private string tenmon;
     private double gia;
-    private string mota;
-    private string danhmuc;
+    private string mota
+    private string danhmuc(monchinh, monphu, douongdouong);
 
-    public (string id, string ten, double gia, string mota, string danhmuc) {
+    public banan (id, tenmon, gia, mota, danhmucc){
         this.id = id;
-        this.ten = ten;
+        this.tenmon = tenmon;
         this.gia = gia;
         this.mota = mota;
         this.danhmuc = danhmuc;
+    }
     }
 }

@@ -1,14 +1,12 @@
 public class banan {
     public string idban;
-    private string vitri;
-    private double soluongghe;
-    private string trangthai;
+    private string soluongghe;
+    private string trangthai(trong, da_dat, dang_phuc_vu);
 
-    public (string idban, string vitri, double soluongghe, string trangthai) {
+    public banan (idban, soluongghe, trangthai){
         this.idban = idban;
-        this.vitri = vitri;
-        this.soluongghe = soluongghe;
+        this.soluongghe = soluongghesoluongghe;
         this.trangthai = trangthai;
     }
+    }
 }
-

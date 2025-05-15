@@ -1,13 +1,17 @@
-public class hoadon{
-    private string iddonhang;
-    private string danhsachmonan;
+public class hoadon {
+    private string idhoadon;
+    private string danhsachmon;
     public string idban;
-    private string trangthai;
+    private double thoigiantao;
 
-    public (string iddonhang, string danhsachmonan, string idban, string trangthai) {
-        this.iddonhang = iddonhang;
-        this.danhsachmonan = danhsachmonan;
+    private string trangthai(dangxuli, daxuli);
+
+    public hoadon (idhoadon, danhsachmon, idban, thoigiantao, trangthai){
+        this.idhoadon = idhoadon;
+        this.danhsachmon = danhsachmon;
         this.idban = idban;
+        this.thoigiantao = thoigiantao;
         this.trangthai = trangthai;
+    }
     }
 }
