@@ -1,3 +1,4 @@
+package model;
 class BanAn {
     double viTri;
     String trangThai;

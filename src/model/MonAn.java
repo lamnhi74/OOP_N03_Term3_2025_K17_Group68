@@ -1,3 +1,4 @@
+package model;
 class MonAn {
     String id;
     String ten;

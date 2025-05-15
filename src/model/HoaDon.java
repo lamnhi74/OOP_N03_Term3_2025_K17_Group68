@@ -1,3 +1,4 @@
+package model;
 class HoaDon{
     String id;
     String dsMonAn;
