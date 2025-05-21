@@ -1,0 +1,23 @@
+package test;
+import model.MonAn;
+public class TestMonAn {
+    public static void main(String[] args) {
+        MonAn mon1 = new MonAn("Bánh xèo", 30000, "Bánh xèo miền Trung", "Món chính");
+        assert mon1.getTen().equals("Bánh xèo");
+        assert mon1.getGia() == 30000;
+        assert mon1.getMoTa().equals("Bánh xèo miền Trung");
+        assert mon1.getDanhMuc().equals("Món chính");
+
+        MonAn mon2 = new MonAn();
+        mon2.setTen("Chè đậu xanh");
+        mon2.setGia(15000);
+        mon2.setMoTa("Chè mát lạnh ngon miệng");
+        mon2.setDanhMuc("Tráng miệng");
+        assert mon2.getTen().equals("Chè đậu xanh");
+        assert mon2.getGia() == 15000;
+        assert mon2.getMoTa().equals("Chè mát lạnh ngon miệng");
+        assert mon2.getDanhMuc().equals("Tráng miệng");
+
+        System.out.println("✅ Tất cả test đều thành công!");
+    }
+}
