@@ -8,5 +8,6 @@ public class donhang {
         hoadon.addmon(mon2);
 
         System.out.println("Tổng tiền: " + hoadon.tinhtong());
+        
     }
 }
