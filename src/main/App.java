@@ -1,18 +1,18 @@
 // Source code is decompiled from a .class file using FernFlower decompiler.
 package main;
 import model.MonAn;
+import java.util.ArrayList;
 
 public class App {
     public static void main(String[] args) {
-        MonAn monAn = new MonAn("Cơm Tấm", 35000, "Cơm tấm sườn bì chả", "Món chính");
         System.out.println("Chào mừng đến với thực đơn!");
         System.out.println("Thông tin món ăn đang chọn:");
-        hienThiMonAn(monAn);
-    }
-    public static void hienThiMonAn(MonAn mon) {
-        System.out.println("Tên: " + mon.getTen());
-        System.out.println("Giá: " + mon.getGia());
-        System.out.println("Mô tả: " + mon.getMoTa());
-        System.out.println("Danh mục: " + mon.getDanhMuc());
+        ArrayList<MonAn> danhSachMon = new ArrayList<>();
+            danhSachMon.add(new MonAn("00029", "Pho bo", 40000, "Mon chinh"));
+            danhSachMon.add(new MonAn("00036", "nem chua", 15000, "Mon phu"));
+            danhSachMon.add(new MonAn("00075", "Bun bo Hue", 40000, "Mon chinh"));
+            for(MonAn mon : danhSachMon){
+                mon.hienThiMonAn();
+            }
     }
 }

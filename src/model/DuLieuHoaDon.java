@@ -3,7 +3,7 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class fileDuLieu<T> {
+public class DuLieuHoaDon<T> {
 
     public void saveToFile(String filename, List<T> data) {
         try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(filename))) {

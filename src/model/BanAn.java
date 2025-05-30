@@ -9,7 +9,7 @@ public class BanAn {
         this.viTri=viTri;
         this.trangThai=trangThai;
     }
-     public double getid(){
+     public String getid(){
         return id;
     }
     public double getViTri(){
