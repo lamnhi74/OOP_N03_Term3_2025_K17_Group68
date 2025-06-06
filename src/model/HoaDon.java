@@ -4,13 +4,9 @@ public class HoaDon{
     private String monAn;
     private double viTri;
     private double tongTien;
+    
     public HoaDon(){};
-    public HoaDon(String id, String monAn, double viTri, double tongTien){
-        this.id=id;
-        this.monAn=monAn;
-        this.viTri=viTri;
-        this.tongTien=tongTien;
-    }
+
     public String getid(){
         return id;
     }
