@@ -61,6 +61,10 @@ public class MonAn {
         return mon;
     }
 
+    ArrayList<MonAn> getDanhSachMon(){
+        return mon;
+    }
+
     public ArrayList<MonAn> xoaMon(String id) {
         for (int i = 0; i < mon.size(); i++) {
             if (mon.get(i).id == id) {
@@ -69,4 +73,5 @@ public class MonAn {
         }
         return mon;
     }
+    
 }
