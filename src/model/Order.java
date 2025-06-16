@@ -1,23 +1,38 @@
 package model;
 
-import java.util.List;
+import java.util.ArrayList;
 
 public class Order {
-    private int soBan;
-    private List<String> mon;
+    private String idBan;
+    private double viTri;
 
-    Order(){}
-
-    public Order(int soBan, List<String> mon) {
-        this.soBan = soBan;
-        this.mon = mon;
+    public Order(String idBan, double viTri){
+        this.idBan=idBan;
+        this.viTri=viTri;
     }
 
-    public int getSoBan() {
-        return soBan;
+    public Order(){}
+
+    public String getIDBan(){
+        return idBan;
+    }
+    public void setID(String idBan){
+        this.idBan=idBan;
+    }
+    public double getViTri(){
+        return viTri;
+    }
+    public void setViTri(double viTri){
+        this.viTri=viTri;
+    }
+    
+    private ArrayList<Dish> list = new ArrayList<Dish>();
+    public void addDish(Dish dish) {
+        list.add(dish);
+        System.out.println("Da them vao don hang: " + dish.getTen());
     }
 
-    public List<String> getMon() {
-        return mon;
+    public ArrayList<Dish> getList() {
+    return list;
     }
 }
