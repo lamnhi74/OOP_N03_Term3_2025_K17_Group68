@@ -1,10 +1,11 @@
 package model;
+import java.util.Scanner;
 
 public class Dish {
-    private String id;
-    private String ten;
-    private double gia;
-    private String danhMuc;
+    public String id;
+    public String ten;
+    public double gia;
+    public String danhMuc;
 
     public Dish(String id, String ten, double gia, String danhMuc){
         this.id=id;
@@ -43,7 +44,31 @@ public class Dish {
         this.danhMuc = danhMuc; 
     }
 
-    public String toString() {
-        return id + " - " + ten + " - " + gia + " VND - " + danhMuc;
+    public static Dish createDish(Scanner scanner) {
+        try{
+            System.out.println("Moi ban nhap id mon an");
+            String id = scanner.nextLine();
+            System.out.println("Moi ban nhap ten mon an");
+            String ten = scanner.nextLine();
+            System.out.println("Moi ban nhap gia mon an");
+            double gia = Double.parseDouble(scanner.nextLine());
+            scanner.nextLine();
+            System.out.println("Moi ban nhap danh muc mon an");
+            String danhMuc = scanner.nextLine();
+            System.out.println("");
+            return new Dish(id, ten, gia, danhMuc); 
+        } catch (Exception e) { 
+            System.out.println("Lỗi khi tạo món ăn: " + e.getMessage());
+        return null;
+        } finally {
+            System.out.println("Đã tạo món ăn.");
+        }
     }
+
+    @Override
+    public String toString() {
+        return "Dish:" + id + " - " + ten + " - " + gia + " VND - " + danhMuc;
+    }
+
 }
+

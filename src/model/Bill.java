@@ -32,14 +32,15 @@ public class Bill{
         this.tongTien=tongTien;
     }
 
-    public void addDishToOrder(Dish dish) {
-        order.addDish(dish);
-    }
-
     public void printBill() {
-    System.out.println("===== Hoa don cua " + tenKH + " =====");
-    for (Dish dish : order.getList()) {
-        System.out.println(dish);
+    System.out.println("========== HÓA ĐƠN ==========");
+    System.out.println("Khách hàng: " + tenKH);
+    System.out.println("Danh sách món đã gọi:");
+    for (Dish dish : order.getDishOrder()) {
+        System.out.println("Ten: " + dish.getTen() + " | Gia: " + dish.getGia() + " VND");
     }
+    order.total();
+    System.out.println("TỔNG TIỀN: " + tongTien + " VND");
+    System.out.println("=============================");
     }
 }

@@ -1,8 +1,12 @@
 package model;
 
-import java.io.*;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
 
-public class BillData {
+public class OrderData {
     public static void save(Bill bill, String filename) {
         try (ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream(filename))){
             out.writeObject(bill);

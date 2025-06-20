@@ -1,8 +1,6 @@
-
 package main;
 import model.Menu;
 import model.Bill;
-
 import java.util.Scanner;
 
 public class App {
