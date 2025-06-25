@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Menu {
+    public static final String getAllDishes = null;
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         Dish dish = Dish.createDish(scanner);

@@ -7,22 +7,22 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 
 public class OrderData {
-    public static void save(Bill bill, String filename) {
+    public static void save(Order order, String filename) {
         try (ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream(filename))){
-            out.writeObject(bill);
+            out.writeObject(order);
             System.out.println("Da luu hoa don: " +filename);
         } catch (IOException e){
             System.err.println("Loi khi in file: " +e.getMessage());
         }
     }
-    public static Bill load(String filename) {
+    public static Order load(String filename) {
          try (ObjectInputStream in = new ObjectInputStream(new FileInputStream(filename))){
-            Bill bill = (Bill) in.readObject();
+            Order order = (Order) in.readObject();
             System.out.println("Da doc Menu tu file: " +filename);
-            return bill;
+            return order;
         } catch (IOException | ClassNotFoundException e){
             System.err.println("Loi khi doc file: " +e.getMessage());
-            return new Bill();
+            return new Order();
         }
     }
 }

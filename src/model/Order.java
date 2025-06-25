@@ -2,6 +2,15 @@ package model;
 import java.util.ArrayList;
 
 public class Order {
+    public String tenKH;
+    public String getTenKH() {
+        return tenKH;
+    }
+
+    public void setTenKH(String tenKH) {
+        this.tenKH = tenKH;
+    }
+
     ArrayList<Table> tableOrder = new ArrayList<Table>();
     public ArrayList<Table> addTable(Table table) {
         tableOrder.add(table);

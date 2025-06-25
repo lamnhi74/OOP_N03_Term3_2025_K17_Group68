@@ -1,10 +1,11 @@
 package test;
-import model.MonAn;
+import model.Dish;
+import model.Menu;
 public class BillTest {
     public static void main(String[] args) {
-        MonAn mon = new MonAn("00029","Phở bò", 40000, "Món chính");
+        Dish dish = new Dish("00029","Phở bò", 40000, "Món chính");
         System.out.println("==Test==");
-        mon.hienThiMonAn();
+        dish.printMenu();
         System.out.println("Thanh Cong");
     }
 }
