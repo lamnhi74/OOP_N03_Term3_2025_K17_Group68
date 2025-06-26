@@ -15,6 +15,11 @@ Quản Lý Nhà Hàng
 - Thuộc tính: ID hóa đơn, order, tổng tiền, tên khách hàng
 - Phương thức: Tính tiền, lưu thông tin hóa đơn
 
+#3 phương thức hoạt động trong Ứng dụng Quản lý nhà hàng
+- Phương thức tạo món ăn mới vào Menu
+- Phương thức tạo Order mới
+- Phương thức thanh toán cho từng Order
+
 
 
 

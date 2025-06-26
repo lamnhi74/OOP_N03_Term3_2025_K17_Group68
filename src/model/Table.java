@@ -3,10 +3,12 @@ package model;
 public class Table {
     public String idBan;
     public int viTri;
+    public String tenKH;
 
-    public Table(String idBan, int viTri){
+    public Table(String idBan, int viTri, String tenKH){
         this.idBan=idBan;
         this.viTri=viTri;
+        this.tenKH=tenKH;
     }
 
     public Table(){}
@@ -22,5 +24,11 @@ public class Table {
     }
     public void setViTri(int viTri){
         this.viTri=viTri;
+    }
+    public String getTenKH() {
+        return tenKH;
+    }
+    public void setTenKH(String tenKH) {
+        this.tenKH = tenKH;
     }
 }

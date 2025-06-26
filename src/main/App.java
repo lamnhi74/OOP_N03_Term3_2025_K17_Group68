@@ -7,29 +7,34 @@ import model.Order;
 import java.util.Scanner;
 public class App {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        int choice = 0;
         Menu menu = new Menu();
-        int len = menu.getAllDishes().size();
-
-        for (int i = 0; i < len; i++) {
-            menu.addDish(null);
-        }
-
-        System.out.print("\nNhap ten khach hang: ");
-        Order order = new Order();
-        order.setTenKH(scanner.nextLine());
-
-        String luaChon;
-        do {
-            menu.printMenu();
-            Dish dish = menu.getAllDishes().get(0);
-            order.addDishToOrder(dish);
-            System.out.print("Ban muon tiep tuc chon mon? (y/n): ");
-            luaChon = scanner.nextLine();
-        } while (luaChon.equalsIgnoreCase("y"));
-
-        Bill bill = new Bill();
-        bill.printBill();
-        scanner.close();
+        do{
+            System.out.println("----------Quản Lý Nhà Hàng----------");
+            System.out.println("1. Tạo món ăn mới");
+            System.out.println("2. Sửa thông tin món ăn");
+            System.out.println("3. In Menu");
+            System.out.println("4. Thoát");
+            System.out.println("------------------------------------");
+            System.out.println("Chọn chức năng");
+            
+            Scanner scanner = new Scanner(System.in);
+            choice = Integer.parseInt(scanner.nextLine());
+            switch(choice){
+                case 1: menu.createDish();
+                    break;
+                case 2:
+                    System.out.println("Nhập ID cần sửa: ");
+                    String id = scanner.nextLine(); 
+                    menu.editDish(id);
+                    break;
+                case 3: menu.printMenu();
+                    break;
+                case 4: 
+                    break;
+                default: System.out.println("Chọn sai chức năng");
+                    break;
+            }
+        }while (choice != 4);
     }
 }
