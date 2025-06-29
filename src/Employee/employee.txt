@@ -1,0 +1,7 @@
+102 , Amit Singhal , 25 , Attimabbe Road , 9881675890 , singhalamit@gmail.com , Waiterr
+664 , Lam Nhi , 21 , Bac Ninh , 3576743798 , nsdjhe@bcjdnkjds , Manager
+328 , Minh Quang , 20 , Ha Noi , 8436874973 , nsdj@vdkhfjki , Cook
+102 , Amit Singhal , 25 , Attimabbe Road , 9881675890 , singhalamit@gmail.com , Waiterr
+664 , Lam Nhi , 21 , Bac Ninh , 3576743798 , nsdjhe@bcjdnkjds , Manager
+328 , Minh Quang , 20 , Ha Noi , 8436874973 , nsdj@vdkhfjki , Cook
+101 , Bon , 23 , Ha Noi , 8937479238 , sjkjb@jdbwjkhj , Serving table
