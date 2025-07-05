@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<h1>Menu</h1>
+
+<form th:action="@{/order/add}" method="post">
+    <label>ID món ăn:</label>
+    <input type="number" name="dishId" required>
+    
+    <label>Số lượng:</label>
+    <input type="number" name="quantity" min="1" required>
+    
+    <button type="submit">Thêm</button>
+</form>
+
+<div th:if="${error}">
+    <p th:text="${error}" style="color:red"></p>
+</div>
+
+<h3>Danh sách món đã chọn:</h3>
+<table>
+    <thead>
+        <tr>
+            <th>Tên món</th>
+            <th>Giá</th>
+            <th>Số lượng</th>
+            <th>Thành tiền</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr th:each="item : ${selectedItems}">
+            <td th:text="${item.dish.name}"></td>
+            <td th:text="${item.dish.price}"></td>
+            <td th:text="${item.quantity}"></td>
+            <td th:text="${item.totalPrice}"></td>
+        </tr>
+    </tbody>
+</table>
+</html>

@@ -1,0 +1,15 @@
+package com.example.quanlynhahang;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+
+@SpringBootApplication
+public class QuanlynhahangApplication {
+
+	public static void main(String[] args)  {
+		{SpringApplication.run(QuanlynhahangApplication.class, args);
+	}
+
+}
+}

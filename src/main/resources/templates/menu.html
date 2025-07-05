@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <title>Quản lý Menu</title>
+    </head>
+    <body>
+        <h1>Xin chào Admin</h1>
+        <h2>Danh sách các Món Ăn</h2>
+        <h3 th:text="${Dish1}">ID</h3>
+        <h4 th:text="${Dish1.getName()}">Tên</h4>
+        <h5 th:text="${Dish2.getPrice()}">Giá</h5>
+        <table>
+            <thead>
+                <th>ID</th>
+                <th>Tên</th>
+                <th>Giá</th>
+                <th>Chức năng (Tạo|Update|Xóa|View)</th>
+            </thead>
+            <tbody>
+                <tr th:each="x : ${dish}">
+                    <td th:text="${x.id}"></td>
+                    <td th:text="${x.name}"></td>
+                    <td th:text="${x.price}"></td>
+                    <td>
+                        <a th:href="@{'/dish/create/' +${x.id}'}">Tạo</a>
+                        <a th:href="@{'/dish/create/' +${x.name}'}">Tạo</a>
+                        <a th:href="@{'/dish/create/' +${x.price}'}">Tạo</a>
+                        <a th:href="@{'/dish/create/' +${x.id}'}">Update</a>
+                        <a th:href="@{'/dish/create/' +${x.id}'}">Xóa</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
