@@ -1,0 +1,14 @@
+package model;
+
+@Controller
+public class MenuController {
+
+    @Autowired
+    private Menu menu;
+
+    @GetMapping("/menu")
+    public String showMenu(Model model) {
+        model.addAttribute("menu", Menu.getAllDishes());
+        return "menu";
+    }
+}

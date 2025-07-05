@@ -1,0 +1,21 @@
+125 , Sushi , 20
+128 , Sashimi , 25
+142 , Tempura , 10
+156 , Miso soup , 15
+158 , Donburi , 22
+188 , Natto , 25
+162 , Sukiyaki , 30
+31 , Soba noodles , 22
+38 , Udon noodles , 23
+35 , Ramen , 25
+225 , Curry , 20
+520 , Shabu , 50
+56 , Yakiniku barbecue , 35
+025 , Sakura-cha , 10
+024 , Sencha, 10
+021 , Matcha , 10
+027 , Calpis , 10
+033 , Sake , 12
+035 , Umeshu , 12
+68 , Fruits , 15
+

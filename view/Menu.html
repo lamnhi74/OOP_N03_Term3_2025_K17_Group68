@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<table>
+    <tr>
+        <th>Tên món</th>
+        <th>Giá</th>
+        <th>Danh mục</th>
+        <th>Thao tác</th>
+    </tr>
+    <tr th:each="dish : ${dishes}">
+        <td th:text="${dish.ten}">Tên</td>
+        <td th:text="${dish.gia}">Giá</td>
+        <td th:text="${dish.danhMuc}">Danh mục</td>
+        <td>
+            <form th:action="@{/order/add}" method="post">
+                <input type="hidden" th:name="id" th:value="${dish.id}" />
+                <button type="submit">Thêm vào Order</button>
+            </form>
+        </td>
+    </tr>
+</table>
+</html>
