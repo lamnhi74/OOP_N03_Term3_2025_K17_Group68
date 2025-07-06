@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Order Page</title>
+</head>
+<body>
+<h1>Menu Nhà Hàng</h1>
+
+<table border="1">
+    <tr>
+        <th>ID</th>
+        <th>Tên Món</th>
+        <th>Giá</th>
+    </tr>
+    <tr th:each="dish : ${dishes}">
+        <td th:text="${dish.dishId}"></td>
+        <td th:text="${dish.name}"></td>
+        <td th:text="${dish.price} + 'k'"></td>
+    </tr>
+</table>
+
+<hr>
+
+<h2>Thêm Món Vào Đơn</h2>
+<form th:action="@{'/order/' + ${idTable} + '/add'}" method="post">
+    <label>ID Món: <input type="number" name="dishId" required></label><br>
+    <label>Số lượng: <input type="number" name="quantity" min="1" required></label><br>
+    <button type="submit">Thêm Món</button>
+</form>
+<form th:action="@{/bill/{idTable}(idTable=${idTable})}" method="get">
+    <button type="submit">Thanh toán</button>
+</form>
+
+<h2>Danh sách món đã chọn</h2>
+<ul>
+    <li th:each="item : ${selectedItems}">
+        <span th:text="${item.dish.name}"></span> - SL: <span th:text="${item.quantity}"></span>
+    </li>
+</ul>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Table Management</title>
+    <style>
+        .occupied { background-color: #e74c3c; color: white; }
+        .empty { background-color: #2ecc71; color: white; }
+    </style>
+</head>
+<body>
+    <h1>Table Status Management</h1>
+    <div th:each="table : ${tables}" th:class="${table.occupied} ? 'occupied' : 'empty'">
+        <div>
+            <span>Table [[${table.idTable}]] - 
+                <span th:text="${table.occupied} ? 'Occupied' : 'Empty'"></span>
+            </span>
+
+            <form th:action="@{'/table/clear/' + ${table.idTable}}" method="post" th:if="${table.occupied}">
+                <button type="submit">Clear</button>
+            </form>
+
+            <form th:action="@{'/table/select/' + ${table.idTable}}" method="post" th:if="${!table.occupied}">
+                <button type="submit">Select</button>
+            </form>
+        </div>
+        <hr/>
+    </div>
+</body>
+</html>

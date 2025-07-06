@@ -1,0 +1,21 @@
+<h1>Bill for Table [[${tableId}]]</h1>
+<table>
+    <thead>
+        <tr>
+            <th>Item ID</th><th>Item Name</th><th>Price</th><th>Quantity</th><th>Total</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr th:each="order : ${orders}">
+            <td th:text="${order.dishId}"></td>
+            <td th:text="${order.name}"></td>
+            <td th:text="${order.price}"></td>
+            <td th:text="${order.quantity}"></td>
+            <td th:text="${order.price * order.quantity}"></td>
+        </tr>
+    </tbody>
+</table>
+<h2>Total: <span th:text="${total}"></span></h2>
+<a th:href="@{/bill/{idTable}(idTable=${idTable})}">
+    <button>Thanh toán</button>
+</a>

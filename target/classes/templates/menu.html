@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Menu Quản Lý Món Ăn</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <h1>Danh Sách Món Ăn</h1>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Tên món</th>
+                <th>Giá</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="dish : ${dishes}">
+                <td th:text="${dish.dishId}"></td>
+                <td th:text="${dish.name}"></td>
+                <td th:text="${dish.price}"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>➕ Thêm món ăn</h2>
+    <form action="/menu/create" method="post">
+        <label>ID: <input type="number" name="dishId" required></label><br>
+        <label>Tên món: <input type="text" name="name" required></label><br>
+        <label>Giá: <input type="number" name="price" step="0.01" required></label><br>
+        <button type="submit">Thêm</button>
+    </form>
+
+    <h2>✏️ Cập nhật món ăn</h2>
+    <form action="/menu/update" method="post">
+        <label>ID: <input type="number" name="dishId" required></label><br>
+        <label>Tên mới: <input type="text" name="name" required></label><br>
+        <label>Giá mới: <input type="number" name="price" step="0.01" required></label><br>
+        <button type="submit">Cập nhật</button>
+    </form>
+
+    <h2>❌ Xoá món ăn</h2>
+    <form action="/menu/delete" method="post">
+        <label>ID món cần xoá: <input type="number" name="id" required></label><br>
+        <button type="submit">Xoá</button>
+    </form>
+</body>
+</html>
