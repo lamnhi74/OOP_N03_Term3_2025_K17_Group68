@@ -19,6 +19,8 @@ Quản Lý Nhà Hàng
 - Phương thức tạo món ăn mới vào Menu
 - Phương thức tạo Order mới
 - Phương thức thanh toán cho từng Order
+  ![image](https://github.com/user-attachments/assets/36b9570b-ce73-4c59-8429-35aea0a532fc)
+
 
 
 
