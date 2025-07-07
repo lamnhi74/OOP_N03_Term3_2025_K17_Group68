@@ -22,6 +22,10 @@ Quản Lý Nhà Hàng
   ![image](https://github.com/user-attachments/assets/36b9570b-ce73-4c59-8429-35aea0a532fc)
   ![image](https://github.com/user-attachments/assets/0c1112d7-0c68-4bf1-979a-9947007da4dd)
 ![image](https://github.com/user-attachments/assets/d084fdb0-c2d8-4143-8f3d-07b4d53f19d0)
+![image](https://github.com/user-attachments/assets/3062bdf9-8ae4-4e85-9606-538ac1ef55ef)
+![image](https://github.com/user-attachments/assets/9a288f76-3a0b-44c9-8030-3e12fd77f288)
+
+
 
 
 
