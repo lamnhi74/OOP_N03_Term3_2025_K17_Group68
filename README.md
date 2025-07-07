@@ -20,6 +20,10 @@ Quản Lý Nhà Hàng
 - Phương thức tạo Order mới
 - Phương thức thanh toán cho từng Order
   ![image](https://github.com/user-attachments/assets/36b9570b-ce73-4c59-8429-35aea0a532fc)
+  ![image](https://github.com/user-attachments/assets/0c1112d7-0c68-4bf1-979a-9947007da4dd)
+![image](https://github.com/user-attachments/assets/d084fdb0-c2d8-4143-8f3d-07b4d53f19d0)
+
+
 
 
 
